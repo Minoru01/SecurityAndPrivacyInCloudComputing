@@ -27,7 +27,7 @@ Es fehlt an Standards \cite{puthal2015}
 
 \section{Problem: Fehlerhafter Schutz}
 \label{sec:fehlender-Schutz}
-In diesem Kapitel wird auf die grundsätzlichen Probleme durch fehlenden Schutz eingegangen.
+Fehlender Schutz in Cloud Computing Diensten kann zu Problemen für Cloud Nutzer aber auch für Cloud Anbieter werden. In diesem Kapitel wird auf grundsätzliche Gefahren eingegangen die durch fehlenden Schutz entstehen können.
 
 Im Cloud Computing besteht die Gefahr von Accountdiebstähle oder gekarperte Services. 
 Sobald Hacker sich Zugang zu einem Webservice der auf einem Cloud Server läuft verschafft haben, 
@@ -35,15 +35,24 @@ können diese eigene Überwachungssoftware auf dem Service installieren
 und so bei gut genutzten Services in kurzer Zeit große Mengen sensibler Informationen von Nutzern des Services erhalten.
 Weil die Abhängigkeit von Cloud Computing jährlich zunimmt, 
 steigt auch der Schaden solcher Hackerangriffe von Jahr zu Jahr \cite{jabbar2020}. 
-Dies ist nur eine der Gefahren die in Cloud Computing auftreten können. 
+ 
+Durch die hohe Dynamik die durch Cloud Computing geboten wird entstehen weitere neue Angriffsziele. So können zentral verwaltete Mikroservices, die für die Virtualisierung der Infrastruktur einzelner Nutzer eingesetzt werden zum Sicherheitsproblem werden, weil jeder Mikroservice eine andere Systemkonfiguration haben kann \cite{chen2019}. Somit kann jeder Mikroservice andere Sicherheitsrisiken bergen, die ausgenutzt werden können. Ist zudem keine logische Separierung der Ressourcen verschiedener Nutzer gegeben kann durch die Sicherheitslücke eines einzelnen Nutzers auch Schaden an der Cloud Infrasturktur anderer Nutzer verursacht werden \cite{wehrhahn-aklender2019}. In \autoref{fig:sicherheitsproblem} ist ein solcher Angriff dargestellt, bei dem sich durch die virtuelle Maschine eines Nutzers, aufgrund einer fehlende Trennung der virtuellen Ressourcen, Zugang zu einem weiteren Nutzer verschafft werden konnte. 
+
+\begin{figure}[b]
+	\centering
+	\includegraphics[width=\linewidth]{images/sicherheitsproblem.png}	
+	\caption{Gefahr fehlender Trennung virtueller Ressourcen}
+	\label{fig:sicherheitsproblem}
+\end{figure}
+
+ Kann sich ein Angreifer zugriff auf die Cloud Administration verschaffen hat dieser zudem möglicherweise Zugriff auf die Daten und Services aller Nutzer \cite{wehrhahn-aklender2019}
+
 Weitere Gefahren gehen von cross-site scripting, denial of service Angriffen, 
 unsicher programmierten Anwendungen sowie 
 data breaches, gehackte interfaces und APIs, defekten Authentifizierungen 
 und kompromittierten Berechtigungsnachweise aus. 
 Letztere können insbesondere auch zu längeren downtimes und einer reduzierten Verlässlichkeit führen, 
 wodurch sich zukünftig die Gefahr von Downtimes erhöhen könnte \cite{jabbar2020}.
-
-Durch die hohe Dynamik die durch Cloud Computing geboten wird entstehen weitere neue Angriffsziele. So können zentral verwaltete Mikroservices, die für die Virtualisierung der Infrastruktur einzelner Nutzer eingesetzt werden zum Sicherheitsproblem werden, weil jeder Mikroservice eine andere Systemkonfiguration haben kann \cite{chen2019}. Somit kann jeder Mikroservice andere Sicherheitsrisiken bergen, die ausgenutzt werden können, um durch die oben genannten Angriffe Schaden an der Cloud zu verursachen. 
 
 \section{Problem: Fehlende Zuverlässigkeit und Verfügbarkeit}
 \label{sec:fehlende-Sicherheit}
@@ -55,7 +64,7 @@ aber auch heute noch gibt es vereinzelte Ausfälle die Imageschädigend wirken o
 So gab es zum Beispiel 2017 längere Ausfälle der Cloud Infrasturktur von 
 IMB, GitLab, Facebook, Amazon Web Services, Microsoft Azure und Microsoft Office 365. 
 Bei den Ausfällen kam es zu Datenverlusten, Zugriffsproblemen von Nutzern auf Accounts, 
-Dienste, Projekte und auch kritischen Daten \cite{tsidulko}.
+Dienste, Projekte und auch kritischen Daten \cite{tsidulko2017}.
 %Tsidulko J (2017) The 10 biggest cloud outages of 2017 (So far). 2017; https://www.crn.com/slide-shows/cloud/300089786/the-10-biggest-cloud-outages-of-2017-so-far.htm Accessed 1 Aug 2017
 
 
