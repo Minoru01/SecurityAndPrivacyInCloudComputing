@@ -1,2 +1,1 @@
-# praktika-template
-Template für Paper im IEEE-Format
+Dies ist mein Paper für das Fach Komponenten und Middleware
