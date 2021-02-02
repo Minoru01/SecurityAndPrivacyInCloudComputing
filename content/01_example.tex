@@ -18,14 +18,17 @@ Geteilte Ressourcen: Technische Ressourcen werden von mehreren Nutzern gleichzei
 Erhöhte Skalierbarkeit: Nutzer können gegen erhöhte Kosten sehr Spontan mehr Ressourcen anfordern um mit einer unerwarteten großen Last nicht überfordert zu sein
 \end{itemize}
 
-Neben den Vorteilen gibt es allerdings auch einige Probleme die behandelt werden müssen. So sind Sicherheit und Schutz wichtige Eigenschaften die bei allen kommerziell genutzten Technologien beachtet werden müssen, um Probleme zu vermeiden. Dies gilt auch für alle Ressourcen des Cloud Computing. Gerade bei Anwedungen im öffentlichen Netz gibt es viele potentielle Gefahren, die in der Industrie auch zu finanziellen Verlusten führen können. 
-Dabei erstrecken sich die Gefahren von verlorenen Daten, über Betriebsspionage bis hin zu Hardwareschäden. Ein Großteil dieser Gefahren wird in \autoref{sec:fehlender-Schutz} und \autoref{sec:fehlende-Sicherheit} behandelt.
-Cloud Computing ist trotz der bekannten Gefahren für viele Firmen ein nützliches Mittel bei der Bewältigung von Aufgaben, sodass die Nutzung von Cloud Computing über die vergangenen Jahre weiter zugenommen hat.
-Dass die Industrie dieser Technologie jedoch noch nicht völlig vertraut zeigt sich darin, dass viele Unternehmen viel Geld investieren um die Sicherheit und den Schutz ihrer Cloud Computing Ressourcen zu maximieren. So zeigt sich dieses Verhalten in der 2014 erschienen Umfragestatistik des Markforschungsunternehmens VansonBourne \cite{vansonbourne2014}, aus der hervorgeht dass 58\% aller befragten Unternehmen ihre jährlichen Ausgaben im Bereich der Cloud Sicherheit weiter erhöhen.
+Obwohl es einige Vorteile gibt die für die Nutzung von Cloud Computing sprechen, gibt es im privaten Sektor als auch von Seiten der Industrie noch immer einige Skepsis gegenüber dieser Technologie. Dies rührt vor allem daher, dass die Vorteile des Cloud Computing von einigen Nachteilen überschattet werden. So wird mit Cloud Computing häufig fehlende Sicherheit und fehlender Schutz privater Daten in Verbindung gebracht. Vor allem in der Industrie können solche Probleme gravierende Folgen haben. 
+Trotz der bekannten Gefahren ist Cloud Computing für viele Firmen ein nützliches Mittel bei der Bewältigung von Aufgaben, sodass die Nutzung von Cloud Computing über die vergangenen Jahre weiter zugenommen hat.
+Dass die Industrie dieser Technologie jedoch noch nicht völlig vertraut zeigt sich zum Beispiel darin, dass in der Industrie viel Geld investiert wird um die Sicherheit und den Schutz ihrer Cloud Ressourcen zu maximieren. So geht aus einer 2014 erschienen Umfragestatistik des Markforschungsunternehmens Vanson Bourne \cite{vansonbourne2014} hervor, dass 58\% aller befragten Unternehmen ihre jährlichen Ausgaben im Bereich der Cloud Sicherheit noch weiter erhöhen.
 
-Es fehlt an Standards \cite{puthal2015}
+Die Fragen welche Gefahren es konkret bei der Nutzung der Cloud gibt und welche Lösungsansätze es gibt um das auftreten von Problemen zu minimieren sollen deshalb in diesem Paper ergründet werden.
 
-\section{Problem: Fehlerhafter Schutz}
+\section{Probleme des Cloud Computing}
+Sicherheit und Schutz sind wichtige Eigenschaften die bei allen kommerziell genutzten Technologien beachtet werden müssen um Probleme zu vermeiden. Dies gilt auch für alle Ressourcen des Cloud Computing. Gerade bei Anwedungen im öffentlichen Netz gibt es viele potentielle Gefahren, die in der Industrie auch zu finanziellen Verlusten führen können. 
+Dabei erstrecken sich die Gefahren von verlorenen Daten, über Betriebsspionage bis hin zu Hardwareschäden. 
+
+\subsection{Fehlerhafter Schutz}
 \label{sec:fehlender-Schutz}
 Fehlender Schutz in Cloud Computing Diensten kann zu Problemen für Cloud Nutzer aber auch für Cloud Anbieter werden. In diesem Kapitel wird auf grundsätzliche Gefahren eingegangen die durch fehlenden Schutz entstehen können.
 
@@ -54,42 +57,51 @@ und kompromittierten Berechtigungsnachweise aus.
 Letztere können insbesondere auch zu längeren downtimes und einer reduzierten Verlässlichkeit führen, 
 wodurch sich zukünftig die Gefahr von Downtimes erhöhen könnte \cite{jabbar2020}.
 
-\section{Problem: Fehlende Zuverlässigkeit und Verfügbarkeit}
+Gängige Sicherheitsprodukte eignen sich nur für Infrastukturen deren Netzwerk-Konfigurationen sich nur selten ändern. Bei Cloud Computing können Sicherheitsgateways aufgrund der sich regelmäßig verändernden Infrastukturen häufig  den Datenfluss des Netzwerks nicht ausreichen filtern \cite{wehrhahn-aklender2019}.
+
+Es fehlt an Standarts \cite{puthal2015}
+
+\subsection{Fehlende Zuverlässigkeit und Verfügbarkeit}
 \label{sec:fehlende-Sicherheit}
 Durch Ausfälle und um die Hochverfügbarkeit von Cloud Services gewährleisten zu können, 
-kommt es Jährlich zu Gewinneinbußen in dreistelliger Millionhöhe \cite{snyder2015 }.
-Ausfälle von Cloud Services werden Aufgrund ihres Ausbaus, 
+kommt es Jährlich zu Gewinneinbußen in dreistelliger Millionhöhe \cite{snyder2015}.
+Ausfälle von Cloud Services werden aufgrund eines besseren Netzausbaus, 
 steigender Erfahrung und modernerer Softwarelösungen zwar seltener, 
-aber auch heute noch gibt es vereinzelte Ausfälle die Imageschädigend wirken oder zu Einnahmeausfällen geführt haben. 
+aber können auch heute noch zu vereinzelte Ausfälle führen, die Imageschädigend wirken oder zu Einnahmeausfällen führen können. 
 So gab es zum Beispiel 2017 längere Ausfälle der Cloud Infrasturktur von 
 IMB, GitLab, Facebook, Amazon Web Services, Microsoft Azure und Microsoft Office 365. 
-Bei den Ausfällen kam es zu Datenverlusten, Zugriffsproblemen von Nutzern auf Accounts, 
+Durch die Ausfälle kam es zu Datenverlusten sowie Zugriffsproblemen von Nutzern auf Accounts, 
 Dienste, Projekte und auch kritischen Daten \cite{tsidulko2017}.
 %Tsidulko J (2017) The 10 biggest cloud outages of 2017 (So far). 2017; https://www.crn.com/slide-shows/cloud/300089786/the-10-biggest-cloud-outages-of-2017-so-far.htm Accessed 1 Aug 2017
 
+Trotz des vortschreitenden Netzausbau sowie besseren Technologien und damit einhergehend kürzeren Latenzzeiten kann es dennoch vorkommen, dass es zu höheren Latenzen durch einen schlechten lokalen Netzausbau, Störungen oder Überlastungen kommen kann.
+Während es Bei lokalen Anwendungen keine Latenzen gibt, können Latenzen zwischen Nutzer und Cloudinfrastruktur die Benutzerfreundlichkeit von Anwendungen reduzieren, wodurch diese weniger attraktiv gegenüber lokalen Anwendungen wirken können.
+Ebenfalls ist es unter Umständen möglich, dass gesendete oder empfangene Datenpakete verloren gehen oder kompromitiert werden und so die Zuverlässigkeit reduziert wird. 
 
-Daten können temporär nicht erreichbar sein oder verloren gehen
-Latenzen können gefährliche seiteneffekte haben
-Daten können durch fehler öffentlich gemacht werden
+Latenzen können auch innerhalb der Cloud auftreten, weil nicht umbedingt garantiert wird, dass die für die Cloud Infrastruktur benötigte Ressourcen auf der selben Hardware bereitgestellt wird. 
+Die physikalische Entfernung und die Anzahl an Switches die beim Datenaustausch mit den verteilten Ressourcen auch innerhalb der Cloud Infrasturktur durchquert werden muss, kann je nach Anwendungsfall die Ausführungszeit erhöhen.
+Auf diese Art können Anwendungen, von denen eine schnelle Ausführungszeit als Teil ihrer Zuverlässigkeit erwartet wird, ausgebremst werden. Davon sind insbesondere Dienste betroffen die sich mit anderen Diensten Austauschen. 
 
-\section{Problem: Datensicherheit}
+Die Verfügbarkeit von Cloud Services kann auch durch DDoS Angriffen beeinflusst werden. Dabei treten zwei Arten von Angriffen auf. In den meisten Fällen wird dabei von außerhalb der Cloud versucht die Verfügbarkeit von Clouddiensten durch Überlasstung negativ zu beeinflussen. Seltener wird versucht von innerhalb der Cloud Physikalische Ressourcen wie Netzwerke, Bandbreite, Speicherplatz oder Datenbanken anzugreifen \cite{darwish2013}.
+
+\subsection{Datensicherheit}
 Auch der Wunsch der Benutzer nach Datensicherheit kann eine Herausforderung im Cloud Computing sein. Die Nutzung von Cloud Computing birgt generell datenschutzrechtliche Risiken. 
 Persönliche Daten von Nutzern der Clouddienste werden nicht länger lokal gespeichert und gehandhabt sondern von den Cloud Computing Anbietern \cite{selzer2020}. 
 Diese Anbieter sind oft internationale Unternehmen, mit Servern die über mehrere Länder verteilt sein können. Je nach Land in dem die Server stehen, gelten eventuell auch andere Richtlinien wie die Sicherheit der Daten gewährleistet werden mussen.
 
 
-
-
 \section{Lösungsansätze}
+Wie aus dem vorhergehenden Kapitel hervogeht gibt es im Cloud Computing einige Probleme die es zu behandeln gilt um die Gefahren für Cloudanbieter und deren Nutzer zu neutralisieren oder zumindest zu reduzieren. 
+Für eine Vielzahl der genannten Probleme gibt es Lösungsansätze die in der Praxis auch bereits eingesetzt werden. 
+Viele der genannten Probleme lassen sich durch ein fehlertolleranteres System und eine erhöhte Datensicherheit behandeln. Im Folgenden werden deshalb Ansätze aufgezeigt um diese beiden Ziele zu erreichen.
 
 \subsection{Fehlertollerante Systeme}
-Um Datenverluste zu vermeiden und die Verfügbarkeit zu maximieren ist es notwendig fehlertollerantere Systeme aufzubauen. Dazu wurden von Mesbahi \cite{mesbahi2018} aus den Arbeiten von Ganesh et al. \cite{ganesh2014} sowie Jhawar et al. \cite{jhawar2013}die Folgenden Lösungsansätze zusammengetragen.
+Um Datenverluste zu vermeiden und die Verfügbarkeit zu maximieren ist es notwendig, fehlertolerantere Systeme aufzubauen. Dazu wurden von Mesbahi \cite{mesbahi2018} aus den Arbeiten von Ganesh et al. \cite{ganesh2014} sowie Jhawar et al. \cite{jhawar2013} die folgenden Lösungsansätze zusammengetragen.
 
 \begin{itemize}
 \item
-Präventives Migrieren: Beinhaltet das Speichern der Zustände eines Prozesses, das abschalten von Prozessen, die überführung dieses Zustands zu einem anderen Knoten und die dortige wiederaufnahme des abgeschalteten Prozesses.
+Präventives Migrieren: Beinhaltet das Speichern der Zustände eines Prozesses, das Abschalten von Prozessen, die Überführung dieses Zustands zu einem anderen Knoten und die dortige Wiederaufnahme des abgeschalteten Prozesses.
 Dabei wird ein System eingesetzt, das den Zustand des Prozesses durch Feedbacks regelmäßig überwacht und analysiert. 
-
 \item
 Software Verjüngung: Eine Vorbeugende Maßnahme damit sich keine Altlasten in der Laufenden Software ansammeln können. Dabei wird die eingesetzte Software periodisch neu gestartet, um zu vermeiden dass die Software durch verbliebene Altlasten nach und nach Fehler entstehen.
 \item
@@ -98,10 +110,12 @@ Checkpointing: Durch regelmäßiges Zwischenspeichern des aktuellen Zustands ein
 Redundanz: Durch vervielfachung von Services und Daten kann eine bessere Ausfallsicherheit gewährleistet werden, weil im Falle eines Fehlers auf einer fehlerfreien Kopie des Services weitergearbeitet werden kann. Die Kopien können zudem auf unterschiedliche Systeme aufgeteilt werden, wodurch bei einem Ausfall eines Systems der Service in Form einer identischen Kopie weiterhin zur verfügung steht.
 \item
 Erneutes Übertragen: Durch erneutes Übertragen eines fehlgeschlagenen Auftrags an den Selben oder einen anderen Host erhält der Service eine weitere Chance den Auftrag korrekt zu verarbeiten. Im Falle eines Netzwerkproblems bei der Übertragung des Auftrags kann so noch ein mal der selbe Auftrag versendet werden, in der Hoffnung, dass es dieses mal zu keinem Netzwerkproblem kommen wird und der Auftrag korrekt ausgeführt wird. EIn Benutzer erfährt durch eine schnelle Ausführung eines erneuten Sendens eventuell gar nicht, dass der ursprüngliche Auftrag fehlgeschlagen ist.
-
 \end{itemize}
 
+Durch fehlertolerantere Systeme lässt sich also die Chance reduzieren, dass Teile der Cloud in einen fehlerhaften Zustand geraten oder, wenn sie dennoch in einen Fehlerszustand geraten sind, dieser möglichst geringe Auswirkungen auf das System hat und einfach oder sogar automatisiert behoben werden kann.
+
 \subsection{Datensicherheit} 
+Um kritische oder private Daten besser zu schützen gibt es einige Ansätze. Diese wurden zusammen mit einer Erklärung zusammengetragen. Generell gilt, je mehr der Ansätze im Cloud Computing berücksichtigt werden, desto besser können kritische oder private Daten bewahrt werden.
 \begin{itemize}
 \item
 Verschlüsseln von physischen Festplatten: Durch das Verschlüsseln von physischen Datenträgern lassen sich die Folgen eines widerrechtlichen Datenabrufs reduzieren, im Falle eines Datenraubs können die geraubten Informationen eventuell gar nicht oder nur mit beträchtlichem Aufwand missbraucht werden \cite{selzer2020}.
@@ -114,21 +128,20 @@ Kontrollen über Zertifikate oder vor Ort: Durch die vermehrte Kontrolle von Zer
 \item 
 Datenmetriken: Der Grad des Datenschutzes lässt sich durch Datenmetriken aus Logdaten automatisiert ermitteln. Der Einsatz solcher Metriken erfordert dabei weniger Fachwissen des Prüfers als es bei einer vor Ort Kontrolle benötigt würde, weil das Fachwissen durch die Metriken geliefert wird \cite{selzer2020}. Eine Erweiterung der durch die Metriken erfassten Daten kann dabei zusätzlich mit individuellen Anforderungen ergänzt werden \cite{selzer2020}. Die Datenmetriken lassen sich dabei regelmäßig ausführen, wodurch der Nutzer aktuelle und zeitnahe Informationen über den Zustand der Datensicherheit seines Systems erhält und gegebenenfalls ebenso zeitnah auf Verstöße reagieren kann \cite{selzer2020}.
 \item 
-Regelmäßige Backups: Durch das regelmäßiges Abspeichern des gesammten Datenbestands lässt sich das Risiko von Datenverlusten reduzieren, indem im Falle eines Hardwareausfalls mithilfe der Backupdaten ein großteil des Datenbestandes wiederhergestellt werden kann.
+Regelmäßige Backups: Durch das regelmäßiges Abspeichern des gesammten Datenbestands lässt sich das Risiko von Datenverlusten reduzieren, indem im Falle eines Hardwareausfalls mithilfe der Backupdaten ein großteil des Datenbestandes wiederhergestellt werden kann \cite{wehrhahn-aklender2019}.
+\item
+Regelmäßige Updates: Durch automatisierte Updates können Cloudservices aktuell gehalten werden. Durch häufige automatisierte Updates wird die Zeit zwischen den einzelnen Updates reduziert, wodurch die Services aktueller ist und weniger Sicherheitslücken ausgenutzt werden können \cite{wehrhahn-aklender2019}.
+\item
+Standartisierte Angebote: Durch standartisierte Cloud Computing Angebote kann eine höhere Nachvollziehbarkeit im Fehlerfall erreicht werden. Außerdem können Annomalien bei einzelnen Nutzern schneller festgestellt und behandelt werden \cite{wehrhahn-aklender2019}.
 \end{itemize}
+
+Somit zeigt sich, dass es bereits umfangreiche Maßnahmen zur Bewahrung kritische oder private Daten im Cloud Computing gibt, jedoch keiner der Ansätze alleine die Daten der Cloud ausreichend sichern kann.
 
 
 \section{Fazit}
 Die von vor Ort Kontrollen durchgeführte Sicherstellung der Datenschutzkonformität hat in ihrer Anwendung nicht die erwünschten Ergebnisse gebracht, weil sich Anbieter auf Kontrollen vorbereitet und Mängel im Vorfeld aus dem Weg geräumt haben \cite{selzer2020}.
 Die Qualität von Zertifikate von Drittanbietern lässt sich nicht immer mit Sicherheit bestimmen weil es je nach Land sehr viele unterschiedliche Datenschutz und Datensicherheitszertifizierungen geben kann \cite{selzer2020}.
 
+Durch ein Standartisiertes Angebot lassen sich viele Sicherheitsrisiken des Cloud Computing reduzieren. So ermöglicht eine Standartisierung regelmäßigere Updates für alle Nutzer, weil sich Anbieter auf die Perfektion ihres Angebotes spezialisieren können. Das erleichtert es Sowohl den Nutzern als auch dem Anbieter die Vorgänge in der Cloud nachzuvollziehen und Sicherheitslücken zu erkennen. 
 
-\cite{inproceedings}
-
-\cite{article}
-
-\cite{patent}
-
-\cite{book}
-
-\cite{electronic}
+Die vielseitigen Angriffsmöglichkeiten auf die Cloud lassen sich, selbst nach Anpassungen an die Cloudstruktur nicht mit nur einem einzelnen IT-Sicherheitsprodukt absichern, ohne dass dadurch die Funktion der eingeschränkt wird. So können Sicherheitsgateways nur dann den Datenfluss der Cloud ausreichend filtern, wenn sich die Infrastuktur der Cloud nicht weiter verändert. Das würde bedeuten, dass keine dynamische Migration von Ressourcen der Cloud erfolgen dürfte wodurch Skalierbarkeit sowie Verfügbarkeit stark eingeschränkt werden würde \cite{wehrhahn-aklender2019}.
